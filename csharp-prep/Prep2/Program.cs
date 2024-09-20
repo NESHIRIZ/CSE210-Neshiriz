@@ -4,25 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("What is your order number? ");
+        Console.WriteLine("What is your mark? ");
         string answer = Console.ReadLine();
-        int percent = int.Parse(answer);
+        int mark = int.Parse(answer);
 
         string letter = "";
 
-        if (percent >= 90)
+        if (mark >= 90)
         {
             letter = "A";
         }
-        else if (percent >= 80)
+        else if (mark >= 80)
         {
             letter = "B";
         }
-        else if (percent >= 70)
+        else if (mark >=70)
         {
-            letter = "C";
+            letter ="C";
         }
-        else if (percent >= 60)
+        else if (mark >= 60)
         {
             letter = "D";
         }
@@ -31,17 +31,15 @@ class Program
             letter = "F";
         }
 
-        Console.WriteLine($"Your order number is: {letter}");
+        Console.WriteLine($"Your mark is: {letter}");
         
-        if (percent >= 70)
+        if (mark >= 70)
         {
-            Console.WriteLine("You order passed!");
+            Console.WriteLine("You passed, well done. You did well! ");
         }
         else
         {
-            Console.WriteLine("Better luck next time, come and order again!");
+            Console.WriteLine("Better luck next time!");
         }
     }
 }
-
-    

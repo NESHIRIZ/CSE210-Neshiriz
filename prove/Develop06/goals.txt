@@ -1,0 +1,3 @@
+0
+EternalQuest,go gym,5
+ChecklistQuest,study,5
